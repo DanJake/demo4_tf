@@ -98,7 +98,7 @@ resource "google_compute_instance" "Jenkins" {
     }
   }
   metadata = {
-    ssh-keys = "${var.user_name}:${file("./files/id_rsa.pub")}"
+    ssh-keys = "${var.user_name}:${file("~/.ssh/id_rsa.pub")}"
   }
   metadata_startup_script = "apt install -y python"
 }

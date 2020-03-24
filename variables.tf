@@ -1,11 +1,3 @@
-variable "credentials_file" {
-  description = "TF_VAR = Path to the service account key file in JSON format"
-  type        = string
-}
-variable "project_id" {
-  description = "TF_VAR = The ID of the project"
-  type        = string
-}
 variable "region" {
   description = "Default project region"
   default     = "europe-west4"
