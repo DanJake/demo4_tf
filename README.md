@@ -32,7 +32,7 @@ This project is meant for use with Terraform v0.12.20 and Google provider v3.8.0
 ## Inputs
 
 | Name | Description | Type | Example |
-|------|-------------|:----:|
+|------|-------------|:----:|:-------:|
 | GOOGLE\_APPLICATION\_CREDENTIALS | Path to the service account key file in JSON format. | string | "/home/Maksym/file.json" |
 | GOOGLE\_PROJECT | The ID of the project | string | "myproject-123456" |
 | TF\_VAR\_user\_name | The user that we should use for the SSH connection. | string | "Maksym" |
