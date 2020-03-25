@@ -19,9 +19,10 @@
 - Go to terraform-ansible
 - Switch user(if needed) on `TF_VAR_user_name`
 - Change directory to the `TF_VAR_home_dir/ansible-roles`([full documentation][ansible-roles])
+- You need to change the `id_rsa` key to your private key
 - run `$ ansible-vault decrypt id_rsa --vault-password-file $TF_VAR_ansible_vault_key`
 - run `$ ansible-playbook playbook --vault-password-file $TF_VAR_ansible_vault_key`
-After full deployment, pipeline are automatically launched. Pipeline build and deploys the Microservices Infrastructure ([full documentation][ansible-flask]),
+After full deployment, pipeline are automatically launched. Pipeline build and deploys the Microservices Infrastructure ([full documentation][jenkins] and [about Microservice Application][microservice-application]),
 
 
 ## Compatibility
@@ -72,3 +73,5 @@ Service account or user credentials with the following roles must be used to pro
 [terraform]: https://www.terraform.io/downloads.html
 [terraform-host]: https://github.com/DanJake/demo4_tf.git
 [ansible-roles]: https://gitlab.sxvova.opensource-ukraine.org/root/ansible-roles.git
+[jenkins]: https://gitlab.sxvova.opensource-ukraine.org/root/jenkins-demo4
+[microservice-application]: https://gitlab.sxvova.opensource-ukraine.org/root/microservices-demo
