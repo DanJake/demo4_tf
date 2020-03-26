@@ -14,7 +14,7 @@ static_ip = [
 
 dns_record = [
   {
-    name = "tfjenkins",
+    name = "tjenkins",
   },
   {
     name = "tfansible",
